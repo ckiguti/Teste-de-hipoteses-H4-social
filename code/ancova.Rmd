@@ -26,7 +26,7 @@ fontsize: 10pt
 if (!'remotes' %in% rownames(installed.packages())) install.packages('remotes')
 if (!"rshinystatistics" %in% rownames(installed.packages())) {
   remotes::install_github("geiser/rshinystatistics")
-} else if (packageVersion("rshinystatistics") < "0.0.0.9255") {
+} else if (packageVersion("rshinystatistics") < "0.0.0.9300") {
   remotes::install_github("geiser/rshinystatistics")
 }
 
@@ -225,11 +225,11 @@ kable(pdf[,c("var",between,"group1","group2","estimate","conf.low","conf.high","
 ### Descriptive Statistic of Estimated Marginal Means
 
 ```{r, include=FALSE}
-(emms <- get.ancova.emmeans.with.ds(pwc, sdat, dvs, between, "common"))
+(emms <- get.ancova.emmeans.with.ds(pwc, sdat, dvs, between, "common", covar = covar))
 ```
 
 ```{r, echo=FALSE, purl=FALSE}
-kable(emms[,c("var",between,"n","emmean","mean","conf.low","conf.high","sd","sd.emms","se.emms")], digits = 3)
+kable(emms, digits = 3)
 ```
 
 

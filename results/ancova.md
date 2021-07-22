@@ -49,7 +49,7 @@ Geiser C. Challco <geiser@alumni.usp.br>
 | non.gamified | upper  | pos.score |   7 | 7.000 |      7 |   5 |   8 | 1.155 | 0.436 | 1.068 | 1.5 | NO       |   -0.557 |   -1.393 |
 | NA           | NA     | pos.score |  30 | 8.100 |      8 |   5 |  10 | 1.296 | 0.237 | 0.484 | 2.0 | YES      |   -0.270 |   -0.528 |
 
-![](/home/rstudio/report/ancova/ad5c4ed0b7cf3764/results/ancova_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](/home/rstudio/Teste-de-hipoteses-H4-social/results/ancova_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ## Checking of Assumptions
 
@@ -121,7 +121,7 @@ ggscatter(sdat[["pos.score"]], x=covar, y="pos.score", facet.by=between, short.p
 
     ## `geom_smooth()` using formula 'y ~ x'
 
-![](/home/rstudio/report/ancova/ad5c4ed0b7cf3764/results/ancova_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](/home/rstudio/Teste-de-hipoteses-H4-social/results/ancova_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ### Assumption: Homogeneity of data distribution
 
@@ -147,7 +147,7 @@ Descriptive statistics of data with normal distribution
 | pos.score.3 | non.gamified | lower  | pos.score |   7 | 7.286 |      7 |   6 |   8 | 0.756 | 0.286 | 0.699 | 1.0 |
 | pos.score.4 | non.gamified | upper  | pos.score |   7 | 7.000 |      7 |   5 |   8 | 1.155 | 0.436 | 1.068 | 1.5 |
 
-![](/home/rstudio/report/ancova/ad5c4ed0b7cf3764/results/ancova_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](/home/rstudio/Teste-de-hipoteses-H4-social/results/ancova_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 ## Computation of ANCOVA test and Pairwise Comparison
 
@@ -191,7 +191,7 @@ plots <- twoWayAncovaPlots(sdat[["pos.score"]], "pos.score", between
 plots[["scenario"]]
 ```
 
-![](/home/rstudio/report/ancova/ad5c4ed0b7cf3764/results/ancova_files/figure-gfm/unnamed-chunk-25-1.png)<!-- -->
+![](/home/rstudio/Teste-de-hipoteses-H4-social/results/ancova_files/figure-gfm/unnamed-chunk-25-1.png)<!-- -->
 
 #### Plot for: `pos.score` \~ `social`
 
@@ -199,7 +199,7 @@ plots[["scenario"]]
 plots[["social"]]
 ```
 
-![](/home/rstudio/report/ancova/ad5c4ed0b7cf3764/results/ancova_files/figure-gfm/unnamed-chunk-26-1.png)<!-- -->
+![](/home/rstudio/Teste-de-hipoteses-H4-social/results/ancova_files/figure-gfm/unnamed-chunk-26-1.png)<!-- -->
 
 ### Textual Report
 
